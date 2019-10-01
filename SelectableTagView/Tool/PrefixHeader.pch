@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  SelectableTagView
+//
+//  Created by 董志玮 on 2019/9/29.
+//  Copyright © 2019 董志玮. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <Masonry/Masonry.h>
+#import "SelectedTagModel.h"
+#import <YYModel.h>
+#import "UIView+UIViewController.h"
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight  [UIScreen mainScreen].bounds.size.height
+#define WEAKSELF __weak typeof(self) weakSelf = self;
+static NSString *const selectedTags = @"selectedTags";
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1684097523418500007BF419 /* UIButton+EnlargeClickRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1684097423418500007BF419 /* UIButton+EnlargeClickRegion.m */; };
+		16840979234327AB007BF419 /* UIView+UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16840978234327AB007BF419 /* UIView+UIViewController.m */; };
+		1684097E23432B27007BF419 /* TableViewCellCenterTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1684097D23432B27007BF419 /* TableViewCellCenterTextLabel.m */; };
+		16F79D392341015B004E4DCE /* SelectedTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F79D382341015B004E4DCE /* SelectedTagModel.m */; };
+		94D1B1D991C649AEA968A7D5 /* libPods-SelectableTagView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F7900F07747A6C6BA670F /* libPods-SelectableTagView.a */; };
+		AE61F4AFA16E9FB5D0FA9947 /* libPods-SelectableTagViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D40001D916F1DC1513CF7E /* libPods-SelectableTagViewUITests.a */; };
+		B6CFFDE75E11EF0985C14A6E /* libPods-SelectableTagViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6282540BB2224BC065571F3C /* libPods-SelectableTagViewTests.a */; };
+		EA92BD9B234058D700A59F9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BD9A234058D700A59F9B /* AppDelegate.m */; };
+		EA92BD9E234058D700A59F9B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BD9D234058D700A59F9B /* SceneDelegate.m */; };
+		EA92BDA4234058D700A59F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA92BDA2234058D700A59F9B /* Main.storyboard */; };
+		EA92BDA6234058D800A59F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA92BDA5234058D800A59F9B /* Assets.xcassets */; };
+		EA92BDA9234058D800A59F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA92BDA7234058D800A59F9B /* LaunchScreen.storyboard */; };
+		EA92BDAC234058D800A59F9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDAB234058D800A59F9B /* main.m */; };
+		EA92BDB6234058D800A59F9B /* SelectableTagViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDB5234058D800A59F9B /* SelectableTagViewTests.m */; };
+		EA92BDC1234058D800A59F9B /* SelectableTagViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDC0234058D800A59F9B /* SelectableTagViewUITests.m */; };
+		EA92BDD0234059E200A59F9B /* TagView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDCF234059E200A59F9B /* TagView.m */; };
+		EA92BDD42340968F00A59F9B /* TagSelectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDD32340968F00A59F9B /* TagSelectionTableViewCell.m */; };
+		EA92BDD72340A0EC00A59F9B /* TagSelectionTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDD62340A0EC00A59F9B /* TagSelectionTableView.m */; };
+		EA92BDDA2340A57B00A59F9B /* TagInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDD92340A57B00A59F9B /* TagInfoModel.m */; };
+		EA92BDDD2340C77600A59F9B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDDC2340C77600A59F9B /* MainViewController.m */; };
+		EA92BDE82340C8A900A59F9B /* ExpandableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDE72340C8A900A59F9B /* ExpandableTableViewCell.m */; };
+		EA92BDEC2340C8C000A59F9B /* MainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDEB2340C8C000A59F9B /* MainTableView.m */; };
+		EA92BDEF2340C8DD00A59F9B /* ExperienceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDEE2340C8DD00A59F9B /* ExperienceModel.m */; };
+		EA92BDF22340CB4200A59F9B /* TagViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDF12340CB4200A59F9B /* TagViewTableViewCell.m */; };
+		EA92BDF62340CDB300A59F9B /* TagSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92BDF52340CDB300A59F9B /* TagSectionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA92BDB2234058D800A59F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA92BD8E234058D700A59F9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA92BD95234058D700A59F9B;
+			remoteInfo = SelectableTagView;
+		};
+		EA92BDBD234058D800A59F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA92BD8E234058D700A59F9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA92BD95234058D700A59F9B;
+			remoteInfo = SelectableTagView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1684097323418500007BF419 /* UIButton+EnlargeClickRegion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeClickRegion.h"; sourceTree = "<group>"; };
+		1684097423418500007BF419 /* UIButton+EnlargeClickRegion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeClickRegion.m"; sourceTree = "<group>"; };
+		16840977234327AB007BF419 /* UIView+UIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewController.h"; sourceTree = "<group>"; };
+		16840978234327AB007BF419 /* UIView+UIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewController.m"; sourceTree = "<group>"; };
+		1684097C23432B27007BF419 /* TableViewCellCenterTextLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellCenterTextLabel.h; sourceTree = "<group>"; };
+		1684097D23432B27007BF419 /* TableViewCellCenterTextLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellCenterTextLabel.m; sourceTree = "<group>"; };
+		16F79D372341015B004E4DCE /* SelectedTagModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectedTagModel.h; sourceTree = "<group>"; };
+		16F79D382341015B004E4DCE /* SelectedTagModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectedTagModel.m; sourceTree = "<group>"; };
+		196F7900F07747A6C6BA670F /* libPods-SelectableTagView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SelectableTagView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6282540BB2224BC065571F3C /* libPods-SelectableTagViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SelectableTagViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67D40001D916F1DC1513CF7E /* libPods-SelectableTagViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SelectableTagViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1AD9A46866EFE861C498A2 /* Pods-SelectableTagViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectableTagViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SelectableTagViewUITests/Pods-SelectableTagViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6BF873360856627D6CA6D5FE /* Pods-SelectableTagView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectableTagView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelectableTagView/Pods-SelectableTagView.debug.xcconfig"; sourceTree = "<group>"; };
+		8D055506D44091FD42E4D79F /* Pods-SelectableTagViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectableTagViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SelectableTagViewTests/Pods-SelectableTagViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		A413C8435B16F95A3444D518 /* Pods-SelectableTagViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectableTagViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelectableTagViewUITests/Pods-SelectableTagViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC141707C43B39959D5B635C /* Pods-SelectableTagView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectableTagView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SelectableTagView/Pods-SelectableTagView.release.xcconfig"; sourceTree = "<group>"; };
+		EA92BD96234058D700A59F9B /* SelectableTagView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectableTagView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA92BD99234058D700A59F9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA92BD9A234058D700A59F9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA92BD9C234058D700A59F9B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		EA92BD9D234058D700A59F9B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		EA92BD9F234058D700A59F9B /* TagSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagSectionViewController.h; sourceTree = "<group>"; };
+		EA92BDA3234058D700A59F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA92BDA5234058D800A59F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA92BDA8234058D800A59F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA92BDAA234058D800A59F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA92BDAB234058D800A59F9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA92BDB1234058D800A59F9B /* SelectableTagViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectableTagViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA92BDB5234058D800A59F9B /* SelectableTagViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectableTagViewTests.m; sourceTree = "<group>"; };
+		EA92BDB7234058D800A59F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA92BDBC234058D800A59F9B /* SelectableTagViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectableTagViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA92BDC0234058D800A59F9B /* SelectableTagViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectableTagViewUITests.m; sourceTree = "<group>"; };
+		EA92BDC2234058D800A59F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA92BDCE234059E200A59F9B /* TagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagView.h; sourceTree = "<group>"; };
+		EA92BDCF234059E200A59F9B /* TagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagView.m; sourceTree = "<group>"; };
+		EA92BDD123405A1200A59F9B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EA92BDD22340968F00A59F9B /* TagSelectionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagSelectionTableViewCell.h; sourceTree = "<group>"; };
+		EA92BDD32340968F00A59F9B /* TagSelectionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagSelectionTableViewCell.m; sourceTree = "<group>"; };
+		EA92BDD52340A0EC00A59F9B /* TagSelectionTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagSelectionTableView.h; sourceTree = "<group>"; };
+		EA92BDD62340A0EC00A59F9B /* TagSelectionTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagSelectionTableView.m; sourceTree = "<group>"; };
+		EA92BDD82340A57B00A59F9B /* TagInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagInfoModel.h; sourceTree = "<group>"; };
+		EA92BDD92340A57B00A59F9B /* TagInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagInfoModel.m; sourceTree = "<group>"; };
+		EA92BDDB2340C77600A59F9B /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EA92BDDC2340C77600A59F9B /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EA92BDE62340C8A900A59F9B /* ExpandableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableTableViewCell.h; sourceTree = "<group>"; };
+		EA92BDE72340C8A900A59F9B /* ExpandableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandableTableViewCell.m; sourceTree = "<group>"; };
+		EA92BDEA2340C8C000A59F9B /* MainTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableView.h; sourceTree = "<group>"; };
+		EA92BDEB2340C8C000A59F9B /* MainTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableView.m; sourceTree = "<group>"; };
+		EA92BDED2340C8DD00A59F9B /* ExperienceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExperienceModel.h; sourceTree = "<group>"; };
+		EA92BDEE2340C8DD00A59F9B /* ExperienceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExperienceModel.m; sourceTree = "<group>"; };
+		EA92BDF02340CB4200A59F9B /* TagViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagViewTableViewCell.h; sourceTree = "<group>"; };
+		EA92BDF12340CB4200A59F9B /* TagViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagViewTableViewCell.m; sourceTree = "<group>"; };
+		EA92BDF52340CDB300A59F9B /* TagSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagSectionViewController.m; sourceTree = "<group>"; };
+		F84202BCF1337031FBB1DF67 /* Pods-SelectableTagViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelectableTagViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelectableTagViewTests/Pods-SelectableTagViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA92BD93234058D700A59F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D1B1D991C649AEA968A7D5 /* libPods-SelectableTagView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA92BDAE234058D800A59F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CFFDE75E11EF0985C14A6E /* libPods-SelectableTagViewTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA92BDB9234058D800A59F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE61F4AFA16E9FB5D0FA9947 /* libPods-SelectableTagViewUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1684097623432331007BF419 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				EA92BDD123405A1200A59F9B /* PrefixHeader.pch */,
+				1684097323418500007BF419 /* UIButton+EnlargeClickRegion.h */,
+				1684097423418500007BF419 /* UIButton+EnlargeClickRegion.m */,
+				16840977234327AB007BF419 /* UIView+UIViewController.h */,
+				16840978234327AB007BF419 /* UIView+UIViewController.m */,
+				1684097C23432B27007BF419 /* TableViewCellCenterTextLabel.h */,
+				1684097D23432B27007BF419 /* TableViewCellCenterTextLabel.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		67608C5815CBF45C54B3EE82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				196F7900F07747A6C6BA670F /* libPods-SelectableTagView.a */,
+				6282540BB2224BC065571F3C /* libPods-SelectableTagViewTests.a */,
+				67D40001D916F1DC1513CF7E /* libPods-SelectableTagViewUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBDE77F14A06D27623EE3D2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BF873360856627D6CA6D5FE /* Pods-SelectableTagView.debug.xcconfig */,
+				DC141707C43B39959D5B635C /* Pods-SelectableTagView.release.xcconfig */,
+				F84202BCF1337031FBB1DF67 /* Pods-SelectableTagViewTests.debug.xcconfig */,
+				8D055506D44091FD42E4D79F /* Pods-SelectableTagViewTests.release.xcconfig */,
+				A413C8435B16F95A3444D518 /* Pods-SelectableTagViewUITests.debug.xcconfig */,
+				6B1AD9A46866EFE861C498A2 /* Pods-SelectableTagViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA92BD8D234058D700A59F9B = {
+			isa = PBXGroup;
+			children = (
+				EA92BD98234058D700A59F9B /* SelectableTagView */,
+				EA92BDB4234058D800A59F9B /* SelectableTagViewTests */,
+				EA92BDBF234058D800A59F9B /* SelectableTagViewUITests */,
+				EA92BD97234058D700A59F9B /* Products */,
+				CBDE77F14A06D27623EE3D2B /* Pods */,
+				67608C5815CBF45C54B3EE82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA92BD97234058D700A59F9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA92BD96234058D700A59F9B /* SelectableTagView.app */,
+				EA92BDB1234058D800A59F9B /* SelectableTagViewTests.xctest */,
+				EA92BDBC234058D800A59F9B /* SelectableTagViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA92BD98234058D700A59F9B /* SelectableTagView */ = {
+			isa = PBXGroup;
+			children = (
+				EA92BD99234058D700A59F9B /* AppDelegate.h */,
+				EA92BD9A234058D700A59F9B /* AppDelegate.m */,
+				EA92BD9C234058D700A59F9B /* SceneDelegate.h */,
+				EA92BD9D234058D700A59F9B /* SceneDelegate.m */,
+				EA92BDDB2340C77600A59F9B /* MainViewController.h */,
+				EA92BDDC2340C77600A59F9B /* MainViewController.m */,
+				EA92BD9F234058D700A59F9B /* TagSectionViewController.h */,
+				EA92BDF52340CDB300A59F9B /* TagSectionViewController.m */,
+				EA92BDE92340C8B400A59F9B /* View */,
+				EA92BDE52340C80B00A59F9B /* Cell */,
+				EA92BDE12340C7B500A59F9B /* Model */,
+				1684097623432331007BF419 /* Tool */,
+				EA92BDA5234058D800A59F9B /* Assets.xcassets */,
+				EA92BDA7234058D800A59F9B /* LaunchScreen.storyboard */,
+				EA92BDA2234058D700A59F9B /* Main.storyboard */,
+				EA92BDAA234058D800A59F9B /* Info.plist */,
+				EA92BDAB234058D800A59F9B /* main.m */,
+			);
+			path = SelectableTagView;
+			sourceTree = "<group>";
+		};
+		EA92BDB4234058D800A59F9B /* SelectableTagViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA92BDB5234058D800A59F9B /* SelectableTagViewTests.m */,
+				EA92BDB7234058D800A59F9B /* Info.plist */,
+			);
+			path = SelectableTagViewTests;
+			sourceTree = "<group>";
+		};
+		EA92BDBF234058D800A59F9B /* SelectableTagViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA92BDC0234058D800A59F9B /* SelectableTagViewUITests.m */,
+				EA92BDC2234058D800A59F9B /* Info.plist */,
+			);
+			path = SelectableTagViewUITests;
+			sourceTree = "<group>";
+		};
+		EA92BDE12340C7B500A59F9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA92BDED2340C8DD00A59F9B /* ExperienceModel.h */,
+				EA92BDEE2340C8DD00A59F9B /* ExperienceModel.m */,
+				EA92BDD82340A57B00A59F9B /* TagInfoModel.h */,
+				EA92BDD92340A57B00A59F9B /* TagInfoModel.m */,
+				16F79D372341015B004E4DCE /* SelectedTagModel.h */,
+				16F79D382341015B004E4DCE /* SelectedTagModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA92BDE52340C80B00A59F9B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EA92BDF02340CB4200A59F9B /* TagViewTableViewCell.h */,
+				EA92BDF12340CB4200A59F9B /* TagViewTableViewCell.m */,
+				EA92BDE62340C8A900A59F9B /* ExpandableTableViewCell.h */,
+				EA92BDE72340C8A900A59F9B /* ExpandableTableViewCell.m */,
+				EA92BDD22340968F00A59F9B /* TagSelectionTableViewCell.h */,
+				EA92BDD32340968F00A59F9B /* TagSelectionTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EA92BDE92340C8B400A59F9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA92BDEA2340C8C000A59F9B /* MainTableView.h */,
+				EA92BDEB2340C8C000A59F9B /* MainTableView.m */,
+				EA92BDD52340A0EC00A59F9B /* TagSelectionTableView.h */,
+				EA92BDD62340A0EC00A59F9B /* TagSelectionTableView.m */,
+				EA92BDCE234059E200A59F9B /* TagView.h */,
+				EA92BDCF234059E200A59F9B /* TagView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA92BD95234058D700A59F9B /* SelectableTagView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA92BDC5234058D800A59F9B /* Build configuration list for PBXNativeTarget "SelectableTagView" */;
+			buildPhases = (
+				56E820DF2B0B039A06BCD61B /* [CP] Check Pods Manifest.lock */,
+				EA92BD92234058D700A59F9B /* Sources */,
+				EA92BD93234058D700A59F9B /* Frameworks */,
+				EA92BD94234058D700A59F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SelectableTagView;
+			productName = SelectableTagView;
+			productReference = EA92BD96234058D700A59F9B /* SelectableTagView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA92BDB0234058D800A59F9B /* SelectableTagViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA92BDC8234058D800A59F9B /* Build configuration list for PBXNativeTarget "SelectableTagViewTests" */;
+			buildPhases = (
+				291C67E1AD08A0E86090A5EE /* [CP] Check Pods Manifest.lock */,
+				EA92BDAD234058D800A59F9B /* Sources */,
+				EA92BDAE234058D800A59F9B /* Frameworks */,
+				EA92BDAF234058D800A59F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA92BDB3234058D800A59F9B /* PBXTargetDependency */,
+			);
+			name = SelectableTagViewTests;
+			productName = SelectableTagViewTests;
+			productReference = EA92BDB1234058D800A59F9B /* SelectableTagViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA92BDBB234058D800A59F9B /* SelectableTagViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA92BDCB234058D800A59F9B /* Build configuration list for PBXNativeTarget "SelectableTagViewUITests" */;
+			buildPhases = (
+				C42650120F50EA37B87D9689 /* [CP] Check Pods Manifest.lock */,
+				EA92BDB8234058D800A59F9B /* Sources */,
+				EA92BDB9234058D800A59F9B /* Frameworks */,
+				EA92BDBA234058D800A59F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA92BDBE234058D800A59F9B /* PBXTargetDependency */,
+			);
+			name = SelectableTagViewUITests;
+			productName = SelectableTagViewUITests;
+			productReference = EA92BDBC234058D800A59F9B /* SelectableTagViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA92BD8E234058D700A59F9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "董志玮";
+				TargetAttributes = {
+					EA92BD95234058D700A59F9B = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					EA92BDB0234058D800A59F9B = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = EA92BD95234058D700A59F9B;
+					};
+					EA92BDBB234058D800A59F9B = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = EA92BD95234058D700A59F9B;
+					};
+				};
+			};
+			buildConfigurationList = EA92BD91234058D700A59F9B /* Build configuration list for PBXProject "SelectableTagView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA92BD8D234058D700A59F9B;
+			productRefGroup = EA92BD97234058D700A59F9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA92BD95234058D700A59F9B /* SelectableTagView */,
+				EA92BDB0234058D800A59F9B /* SelectableTagViewTests */,
+				EA92BDBB234058D800A59F9B /* SelectableTagViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA92BD94234058D700A59F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA92BDA9234058D800A59F9B /* LaunchScreen.storyboard in Resources */,
+				EA92BDA6234058D800A59F9B /* Assets.xcassets in Resources */,
+				EA92BDA4234058D700A59F9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA92BDAF234058D800A59F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA92BDBA234058D800A59F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		291C67E1AD08A0E86090A5EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelectableTagViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56E820DF2B0B039A06BCD61B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelectableTagView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C42650120F50EA37B87D9689 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelectableTagViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA92BD92234058D700A59F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA92BDE82340C8A900A59F9B /* ExpandableTableViewCell.m in Sources */,
+				EA92BDD0234059E200A59F9B /* TagView.m in Sources */,
+				EA92BDDA2340A57B00A59F9B /* TagInfoModel.m in Sources */,
+				1684097E23432B27007BF419 /* TableViewCellCenterTextLabel.m in Sources */,
+				EA92BD9B234058D700A59F9B /* AppDelegate.m in Sources */,
+				EA92BDDD2340C77600A59F9B /* MainViewController.m in Sources */,
+				16840979234327AB007BF419 /* UIView+UIViewController.m in Sources */,
+				1684097523418500007BF419 /* UIButton+EnlargeClickRegion.m in Sources */,
+				EA92BDD42340968F00A59F9B /* TagSelectionTableViewCell.m in Sources */,
+				EA92BDF62340CDB300A59F9B /* TagSectionViewController.m in Sources */,
+				EA92BDAC234058D800A59F9B /* main.m in Sources */,
+				EA92BDEC2340C8C000A59F9B /* MainTableView.m in Sources */,
+				EA92BDEF2340C8DD00A59F9B /* ExperienceModel.m in Sources */,
+				EA92BDF22340CB4200A59F9B /* TagViewTableViewCell.m in Sources */,
+				16F79D392341015B004E4DCE /* SelectedTagModel.m in Sources */,
+				EA92BD9E234058D700A59F9B /* SceneDelegate.m in Sources */,
+				EA92BDD72340A0EC00A59F9B /* TagSelectionTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA92BDAD234058D800A59F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA92BDB6234058D800A59F9B /* SelectableTagViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA92BDB8234058D800A59F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA92BDC1234058D800A59F9B /* SelectableTagViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA92BDB3234058D800A59F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA92BD95234058D700A59F9B /* SelectableTagView */;
+			targetProxy = EA92BDB2234058D800A59F9B /* PBXContainerItemProxy */;
+		};
+		EA92BDBE234058D800A59F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA92BD95234058D700A59F9B /* SelectableTagView */;
+			targetProxy = EA92BDBD234058D800A59F9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA92BDA2234058D700A59F9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA92BDA3234058D700A59F9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA92BDA7234058D800A59F9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA92BDA8234058D800A59F9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA92BDC3234058D800A59F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA92BDC4234058D800A59F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA92BDC6234058D800A59F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BF873360856627D6CA6D5FE /* Pods-SelectableTagView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AXBMWZHA47;
+				GCC_PREFIX_HEADER = SelectableTagView/Tool/PrefixHeader.pch;
+				INFOPLIST_FILE = SelectableTagView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhiwei.SelectableTagView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA92BDC7234058D800A59F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC141707C43B39959D5B635C /* Pods-SelectableTagView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AXBMWZHA47;
+				GCC_PREFIX_HEADER = SelectableTagView/Tool/PrefixHeader.pch;
+				INFOPLIST_FILE = SelectableTagView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhiwei.SelectableTagView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA92BDC9234058D800A59F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84202BCF1337031FBB1DF67 /* Pods-SelectableTagViewTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AXBMWZHA47;
+				INFOPLIST_FILE = SelectableTagViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhiwei.SelectableTagViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectableTagView.app/SelectableTagView";
+			};
+			name = Debug;
+		};
+		EA92BDCA234058D800A59F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D055506D44091FD42E4D79F /* Pods-SelectableTagViewTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AXBMWZHA47;
+				INFOPLIST_FILE = SelectableTagViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhiwei.SelectableTagViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectableTagView.app/SelectableTagView";
+			};
+			name = Release;
+		};
+		EA92BDCC234058D800A59F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A413C8435B16F95A3444D518 /* Pods-SelectableTagViewUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AXBMWZHA47;
+				INFOPLIST_FILE = SelectableTagViewUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhiwei.SelectableTagViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SelectableTagView;
+			};
+			name = Debug;
+		};
+		EA92BDCD234058D800A59F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B1AD9A46866EFE861C498A2 /* Pods-SelectableTagViewUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AXBMWZHA47;
+				INFOPLIST_FILE = SelectableTagViewUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhiwei.SelectableTagViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SelectableTagView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA92BD91234058D700A59F9B /* Build configuration list for PBXProject "SelectableTagView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA92BDC3234058D800A59F9B /* Debug */,
+				EA92BDC4234058D800A59F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA92BDC5234058D800A59F9B /* Build configuration list for PBXNativeTarget "SelectableTagView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA92BDC6234058D800A59F9B /* Debug */,
+				EA92BDC7234058D800A59F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA92BDC8234058D800A59F9B /* Build configuration list for PBXNativeTarget "SelectableTagViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA92BDC9234058D800A59F9B /* Debug */,
+				EA92BDCA234058D800A59F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA92BDCB234058D800A59F9B /* Build configuration list for PBXNativeTarget "SelectableTagViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA92BDCC234058D800A59F9B /* Debug */,
+				EA92BDCD234058D800A59F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA92BD8E234058D700A59F9B /* Project object */;
+}
